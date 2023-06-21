@@ -16,7 +16,7 @@ This AWS Lambda function allows you to automatically download Twitter Spaces rec
 
 3. Configure the required AWS permissions for the Lambda function to access S3, CloudWatch, etc.
 
-4. Set up an S3 bucket to store the downloaded Twitter Spaces recordings.
+4. Set up an S3 bucket to store the downloaded Twitter Spaces recordings. Name your bucket `spejs`.
 
 5. Configure the necessary API credentials and permissions on the Twitter Developer portal and Google Developer console.
 
