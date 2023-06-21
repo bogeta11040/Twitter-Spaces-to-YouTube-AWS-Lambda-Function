@@ -5,16 +5,16 @@ This AWS Lambda function allows you to automatically download Twitter Spaces rec
 ## Prerequisites
 
 - AWS account
-- PAID Twitter Developer account with API keys
+- (Basic or Pro) Twitter Developer account with API keys
 - Google Developer account with YouTube API key
 
 ## Setup
 
 1. Create an AWS Lambda function using this code. Make sure to set the necessary environment variables for your Twitter and YouTube API credentials.
 
-2. Change the handler function name in the Lambda function configuration to match the function name in the code.
+2. Change the handler function name in the Lambda function configuration to `process_twitter_spaces`.
 
-3. Configure the required AWS permissions for the Lambda function to access S3, CloudWatch, and any other services it requires.
+3. Configure the required AWS permissions for the Lambda function to access S3, CloudWatch, etc.
 
 4. Set up an S3 bucket to store the downloaded Twitter Spaces recordings.
 
