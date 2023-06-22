@@ -24,7 +24,15 @@ This AWS Lambda function allows you to automatically download Twitter Spaces rec
 
 7. Update the configuration variables in the code, such as `consumer_key`, `consumer_secret`, `access_token`, `access_token_secret`, `youtube_api_key`, `twitter_usernames`, and `youtube_channel_id` with your own values.
 
-8. Deploy the Lambda function and test it by triggering it manually or setting up a schedule using CloudWatch Events.
+8. Open your IDE, copy the code and run the following command to install the required packages:
+
+```
+pip install tweepy google-api-python-client requests boto3
+```
+
+9. Zip the files and upload the resulting archive as code to the AWS Lambda service.
+
+10. Deploy the Lambda function and test it by triggering it manually or setting up a schedule using CloudWatch Events.
 
 ## Functionality
 
@@ -34,4 +42,6 @@ This AWS Lambda function allows you to automatically download Twitter Spaces rec
 
 3. It then uploads the video to the specified YouTube channel using the YouTube API.
 
-4. The function logs the success or failure of each operation.
+4. Once the video has been uploaded, it is subsequently removed from the S3 bucket.
+
+5. The function logs the success or failure of each operation.
